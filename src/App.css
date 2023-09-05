@@ -1,0 +1,279 @@
+
+#text-clip{
+  color: #fff;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
+  font-family: Arial, Helvetica, sans-serif;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Libre+Baskerville&family=Merriweather:wght@700&family=Work+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+html {
+  color: rgb(96 101 123);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background: rgb(255 255 255);
+  background-color: rgb(74 74 99 / 80%);
+}
+.footer{
+  margin-top: 100px;
+}
+.soc-links a{
+  text-decoration: none;
+  list-style: none;
+}
+.icons{
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  transition: transform 0.2s ease-in-out;
+}
+.icons:hover{
+  transform: translateY(-5px);
+}
+.link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+
+}
+.container {
+  padding: 30px;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ flex-direction: column;
+height: 950px;
+
+}
+
+h2 {
+  color: rgb(43 45 56);
+  text-align: center;
+  font-size: 48px;
+  letter-spacing: -0.2px;
+  font-family: "Merriweather", serif;
+}
+
+p {
+  max-width: 50rem;
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 100px;
+}
+
+.main-content {
+  max-width: 50rem;
+  width: 100%;
+  min-height: 400px;
+  height: auto;
+  padding: 18px 18px 120px 18px;
+  position: relative;
+  resize: none;
+  box-shadow: 0 12px 48px 0px rgb(109 117 141 / 20%);
+  background-color: rgb(57 54 61);
+  background-color: rgb(74 74 99 / 80%);
+  border: 0.5px solid rgb(231 233 245);
+  border-radius: 16px;
+}
+
+.btn{
+  background: rgb(42, 201, 164);
+  text-align: center;
+ color: #FFF;
+}
+.btn:hover{
+  background: rgb(202, 222, 217);
+  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1);
+  color: black;
+  border: none;
+}
+.main-content:focus {
+  border: 0.3px solid rgb(43, 45, 56, 0.3);
+  outline: none;
+}
+.container h2{
+  color: #FFF;
+
+
+}
+p,
+.main-content {
+  font-size: 18px;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  line-height: 1.6;
+
+}
+
+.btn-style{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+}
+
+button {
+  /* position: absolute; */
+  background: rgb(17 166 131);
+  color: rgb(255 255 255);
+  border-radius: 6px;
+  padding: 16px 32px;
+  border: none;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin: auto;
+  display: flex;
+  position: relative;
+  margin-top: -80px;
+  cursor: pointer;
+}
+
+button:focus,
+button:hover {
+ 
+  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1);
+}
+
+.counter-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    overflow-x: hidden;
+    margin-top: 20px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+.btn-style{
+  display: flex;
+  gap: 5px;
+}
+  p {
+    font-size: 16px;
+    word-spacing: normal;
+    margin-bottom: 40px;
+    margin-top: 15px;
+  }
+
+  .main-content {
+    /*border:1px solid*/
+    font-size: 16px;
+    word-spacing: normal;
+  }
+
+  button {
+    padding: 12px 28px;
+    font-size: 16px;
+    margin-top: -70px;
+    text-align: center;
+  }
+
+  .counter-container {
+    flex-direction: column;
+  }
+
+  .counter-container p:first-child {
+    margin-bottom: 0;
+  }
+}
+@media(max-width:620px){
+  .container{
+    overflow-x: hidden;
+  }
+  .btn-style{
+    display: flex;
+   justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .main-content{
+    width: 320px;
+    overflow-x: hidden;
+    
+  }
+  .btn{
+    height: 55px;
+    text-align: center;
+    margin: 5px;
+    width: 115px;
+    padding: 10px 20px;
+  }
+}
+
+@media(max-width:480px){
+  .container{
+    height: 1000px;
+  }
+  button {
+    padding: 12px 28px;
+    font-size: 16px;
+    margin-top: -70px;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  .btn-style{
+    display: flex;
+   justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .main-content{
+    width: 320px;
+    overflow-x: hidden;
+  }
+  .btn{
+    height: 55px;
+    text-align: center;
+    margin: 5px;
+    width: 115px;
+    padding: 10px 20px;
+  }
+}
